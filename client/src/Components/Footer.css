@@ -1,0 +1,148 @@
+/* Footer.css */
+.library-footer {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  font-family: 'Noto Sans Arabic', 'Tahoma', sans-serif;
+  direction: rtl;
+  line-height: 1.6;
+}
+
+.footer-main {
+  padding: 60px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.footer-about {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-info svg {
+  margin-top: 3px;
+  color: var(--accent-color);
+  min-width: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background-color: var(--accent-color);
+  color: #333;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.legal-links a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .legal-links {
+    margin-top: 10px;
+  }
+}
