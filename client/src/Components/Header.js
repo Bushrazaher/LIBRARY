@@ -2,6 +2,10 @@ import React from 'react';
 import './Header.css';
 import logo from '../Images/logo1.png';
 import logo1 from '../Images/logo2.png';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2faed1ae60406543a5ed113bbd099746516a7834
 import { FaSearch, FaUser } from 'react-icons/fa';
 
 const Header = () => {
